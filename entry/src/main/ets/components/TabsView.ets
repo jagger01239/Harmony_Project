@@ -1,5 +1,5 @@
 import HomePage from "../pages/HomePage"
-
+import PersonPage from "../pages/PersonPage"
 
 @Component
 export default struct TabView{
@@ -31,7 +31,7 @@ export default struct TabView{
         }.tabBar(this.tarBuilder("首页",0,$r("app.media.home_selected"),$r("app.media.home_default")))
         TabContent(){
           Column(){
-            Text("人才内容")
+            PersonPage()
           }
           .width("100%")
           .height("100%")
